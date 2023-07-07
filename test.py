@@ -14,7 +14,7 @@ class SyncTestCase(unittest.TestCase):
     def tearDown(self):
         os.chdir(self.originaldir)
         self.testdir.cleanup()
-    
+
     def test_init(self):
         os.mkdir("source")
         sync = Sync("source", "destination")
@@ -38,11 +38,3 @@ class SyncTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
-
-
-
-
-
